@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Animais para Adoção</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Animais Disponíveis</h2>
+    <button onclick="location.href='cadastrar.html'">Cadastrar Novo Animal</button>
+
+    <div>
+      <select id="filtroTipo" onchange="listarAnimais()">
+        <option value="">Todos os tipos</option>
+        <option value="cachorro">Cachorro</option>
+        <option value="gato">Gato</option>
+      </select>
+      <select id="filtroPorte" onchange="listarAnimais()">
+        <option value="">Todos os portes</option>
+        <option value="pequeno">Pequeno</option>
+        <option value="médio">Médio</option>
+        <option value="grande">Grande</option>
+      </select>
+    </div>
+
+    <div id="lista"></div>
+  </div>
+  <script src="js/animais.js"></script>
+</body>
+</html>

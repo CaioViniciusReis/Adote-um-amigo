@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar Animal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Cadastrar Animal</h2>
+    <input type="text" id="nome" placeholder="Nome do animal">
+    <select id="tipo">
+      <option value="cachorro">Cachorro</option>
+      <option value="gato">Gato</option>
+    </select>
+    <input type="text" id="idade" placeholder="Idade">
+    <input type="text" id="cor" placeholder="Cor">
+    <select id="porte">
+      <option value="pequeno">Pequeno</option>
+      <option value="médio">Médio</option>
+      <option value="grande">Grande</option>
+    </select>
+    <input type="text" id="descricao" placeholder="Descrição">
+    <input type="text" id="contato" placeholder="Contato para adoção">
+    <input type="file" id="foto" accept="image/*">
+    <button onclick="cadastrarAnimal()">Cadastrar</button>
+  </div>
+  <script src="js/cadastrar.js"></script>
+</body>
+</html>
